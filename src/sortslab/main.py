@@ -29,6 +29,9 @@ def factorial(
             ),
             num: int = typer.Argument(...)
             ) -> None:
+    """
+    Calculate factorial of the number
+    """
     if recursive:
         try:
             typer.echo(factorial_recursive(num))
@@ -47,6 +50,9 @@ def fibonacci(
             ),
             num: int = typer.Argument(...)
             ) -> None:
+    """
+    Calculate the n-th fibonacci number
+    """
     if recursive:
         try:
             typer.echo(fibo_recursive(num))
@@ -62,6 +68,9 @@ def fibonacci(
 def bubble_sort(
             arr: list[int] = typer.Argument(...)
             ) -> None:
+    """
+    Sort an array with bubble sort algorithm
+    """
     check_if_types_match("int", arr)
     sorted_arr = bubble_sort_func(arr)
     typer.echo(sorted_arr)
@@ -70,6 +79,9 @@ def bubble_sort(
 def quick_sort(
             arr: list[int] = typer.Argument(...)
             ) -> None:
+    """
+    Sort an array with quick sort algorithm
+    """
     check_if_types_match("int", arr)
     typer.echo(quick_sort_func(arr))
 
@@ -77,6 +89,9 @@ def quick_sort(
 def counting_sort(
             arr: list[int] = typer.Argument(...)
             ) -> None:
+    """
+    Sort an array with counting sort algorithm
+    """
     check_if_types_match("int", arr)
     typer.echo(counting_sort_func(arr))
 
@@ -85,6 +100,9 @@ def radix_sort(
             arr: list[int] = typer.Argument(...),
             base: Annotated[int | None, typer.Argument()] = None
             ) -> None:
+    """
+    Sort an array with radix sort algorithm
+    """
     check_if_types_match("int", arr)
     typer.echo(radix_sort_func(arr, base))
 
@@ -93,6 +111,9 @@ def bucket_sort(
             arr: list[float] = typer.Argument(...),
             buckets: Annotated[int | None, typer.Argument()] = None
             ) -> None:
+    """
+    Sort an array with bucket sort algorithm
+    """
     check_if_types_match("float", arr)
     typer.echo(bucket_sort_func(arr, buckets))
 
@@ -100,6 +121,9 @@ def bucket_sort(
 def heap_sort(
             arr: list[int] = typer.Argument(...)
             ) -> None:
+    """
+    Sort an array with heap sort algorithm
+    """
     check_if_types_match("int", arr)
     typer.echo(heap_sort_func(arr))
 
@@ -107,6 +131,9 @@ def heap_sort(
 def selection_sort(
             arr: list[int] = typer.Argument(...)
             ) -> None:
+    """
+    Sort an array with selection sort algorithm
+    """
     check_if_types_match("int", arr)
     typer.echo(selection_sort_func(arr))
 
@@ -114,6 +141,9 @@ def selection_sort(
 def insertion_sort(
             arr: list[int] = typer.Argument(...)
             ) -> None:
+    """
+    Sort an array with insertion sort algorithm
+    """
     check_if_types_match("int", arr)
     typer.echo(insertion_sort_func(arr))
 
