@@ -28,11 +28,15 @@ git clone https://github.com/leanleanlean96/ConsoleApp
 ```
 pipx install poetry
 ```
-3. Run the program:
+3. Install dependescies
+```
+poetry install
+```
+4. Run the program:
 ```
 poetry run python3 -m src.sortslab.main
 ```
-3. To check command usage rules, type:
+5. To check command usage rules, type:
  ```
   help
  ```
@@ -71,3 +75,4 @@ AlgoPack/
 ├── pyproject.toml
 └── README.md
 ```
+
