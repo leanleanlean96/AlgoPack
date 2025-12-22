@@ -41,6 +41,11 @@ poetry run python3 -m src.sortslab.main
   help
  ```
 
+### Tests
+```
+poetry run pytest ./tests/tests.py
+```
+
 ## Architecture
 ```
 AlgoPack/
@@ -75,4 +80,5 @@ AlgoPack/
 ├── pyproject.toml
 └── README.md
 ```
+
 
