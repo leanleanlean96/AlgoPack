@@ -22,7 +22,7 @@ help
 ## How to set up?
 1. Clone the repo:
 ```
-git clone https://github.com/leanleanlean96/ConsoleApp
+git clone https://github.com/leanleanlean96/AlgoPack
 ```
 2. Install poetry if you dont have it installed:
 ```
@@ -80,5 +80,6 @@ AlgoPack/
 ├── pyproject.toml
 └── README.md
 ```
+
 
 
